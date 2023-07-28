@@ -1,13 +1,32 @@
+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
 
 
+https://github.com/DeepaG2001/TeSt.git
+
+Programming Test
 
 1. Method Overloading
 
+class DishWasher{
+   static void clean(){
+     System.out.println("invoking clean  in DishWasher");
+     String utensil="Bandli";
+      System.out.println("utensil:"+utensil);
+   }
+   static void cleani(int quantity)
+   {
+         System.out.println("invoking clean String in DishWasher ");
+	   System.out.println("invoking plate"+item );
+	   
+   }
+   static void clean(String item,int quantity)
+    {
+       System.out.println("invoking clean int , String item in DishWasher ");
+       System.out.println("items:"+item);
+     System.out.println("quantity:" +quantity);
+    }
 
-
-
-
-
+}
 
 
 
@@ -27,6 +46,7 @@ class Mobile
    {
     System.out.println("invocking main in Mobile");
      int capacity=30;
+
      Systrm,out.println("brand"+this.brand);
      System.out.println("price"+this.price);
      System.out.println("capacity"+this.capacity);
@@ -56,21 +76,18 @@ Heap memory: consistes of Metaphase,Constance Pool, instance Pool
 class Carrom
 {
 	String name;
-	int width;
-	int height;
-	int quantity;
 	String material;
 	
-	Carrom()
-	{
-		System.out.println("invoking  no argument constructor in Carrom");
+   Carrom()
+   {
+     System.out.println("invoking  no argument constructor in Carrom");
 
-		String name = "Black White Game";
-		System.out.println("name is passed:"+name);
-		System.out.println("name:"+this.name);
-		System.out.println("material:"+this.material);
+        String name = "Black White Game";
+	String material="Wood";
+	System.out.println("name:"+this.name);
+	System.out.println("material:"+this.material);
 		
-		System.out.println("invoking main in no argument constructor Carrom");
+	System.out.println("invoking main in no argument constructor Carrom");
 
 	}
 	Carrom(String name,String material)
@@ -116,20 +133,19 @@ class Mall{
 	String location;
 	long noOfCoustomer
 	
-	Mall()
+  Mall()
 	{
-		
-		System.out.println("invoking no-arg const of  Mall");
+	  System.out.println("invoking no-arg const of  Mall");
 		
 	}
-	Mall(String name,String location)
+  Mall(String name,String location)
 	{
-		this.name=name;
-		this.location=location;
-		System.out.println("invocking String ,String, long const of Mall ");
+         this.name=name;
+         this.location=location;
+      System.out.println("invocking String ,String, long const of Mall ");
 	}
 	
-	Mall(String name,String location,long noOfCoustomer
+    Mall(String name,String location,long noOfCoustomer
 	{
 		this(name,location,noOfCoustmor);
 		this.noOfCoustomer=noOfCoustomer;
@@ -142,22 +158,12 @@ class Mall{
 {
   public static void main(String[] args)
 	{
-		System.out.println("invocking main in WoodChainKiller");
+	System.out.println("invocking main in MallKiller");
 		
-		
-		
-		Mall mall1=new Mall("Lulu","Sujatha");
+	Mall mall1=new Mall("Lulu","Sujatha");
 	
-		
-		Mall mall2=new Mall("Lulu","Sujatha",200);
-		
-		
-		
-		
-		Mall mall3=new Mall("Lulu","Sujatha",3000);
-		
+	Mall mall2=new Mall("Lulu","Sujatha",200);
 	}
-
 }
 
 
