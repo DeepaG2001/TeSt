@@ -1,0 +1,172 @@
+
+
+
+1. Method Overloading
+
+
+
+
+
+
+
+
+
+2.Types of Variables
+  a.Local Variable
+  b.Instance Variable
+  c.Static Variable
+  d.Parameter Variable
+
+
+class Mobile
+{
+   String brand="Realme";
+   static double price=25950.99d;
+
+   public static void main (String []args)
+   {
+    System.out.println("invocking main in Mobile");
+     int capacity=30;
+     Systrm,out.println("brand"+this.brand);
+     System.out.println("price"+this.price);
+     System.out.println("capacity"+this.capacity);
+
+     }
+}
+
+
+
+
+3.Difference between Heap and Stack memory
+ 
+Stack memory
+In Stack memory: load all the method
+                It helps to craet memory in instance pool
+
+
+Heap memory: consistes of Metaphase,Constance Pool, instance Pool
+             In metaphase loades all the Classes
+
+
+
+
+
+4. Constructor Overloading
+
+class Carrom
+{
+	String name;
+	int width;
+	int height;
+	int quantity;
+	String material;
+	
+	Carrom()
+	{
+		System.out.println("invoking  no argument constructor in Carrom");
+
+		String name = "Black White Game";
+		System.out.println("name is passed:"+name);
+		System.out.println("name:"+this.name);
+		System.out.println("material:"+this.material);
+		
+		System.out.println("invoking main in no argument constructor Carrom");
+
+	}
+	Carrom(String name,String material)
+	{
+		System.out.println("invoking main in String,String in  constructor Carrom");
+		this.name = name;
+		this.material = material;
+	}
+}
+
+
+
+
+class CarromKiller
+{
+	public static void main(String[] args)
+	{
+		
+		System.out.println("invoking main in CarromKiller:");
+		
+		Carrom carrom = new Carrom();
+		System.out.println("carrom name is:"+carrom.name);
+		System.out.println("carrom material:"+carrom.material);
+		
+		
+		System.out.println("\n");
+		
+		Carrom carrom1 = new Carrom("Target","wood");
+		System.out.println("carrom name is:"+carrom1.name);
+		System.out.println("carrom material:"+carrom1.material);
+     }
+}
+
+
+
+
+
+
+7. Constructoe Chaining
+class Mall{
+	
+	String name;
+	String location;
+	long noOfCoustomer
+	
+	Mall()
+	{
+		
+		System.out.println("invoking no-arg const of  Mall");
+		
+	}
+	Mall(String name,String location)
+	{
+		this.name=name;
+		this.location=location;
+		System.out.println("invocking String ,String, long const of Mall ");
+	}
+	
+	Mall(String name,String location,long noOfCoustomer
+	{
+		this(name,location,noOfCoustmor);
+		this.noOfCoustomer=noOfCoustomer;
+		System.out.println("invocking String ,String,long const of Mall ");
+
+	}
+	
+   }
+ class MallKiller
+{
+  public static void main(String[] args)
+	{
+		System.out.println("invocking main in WoodChainKiller");
+		
+		
+		
+		Mall mall1=new Mall("Lulu","Sujatha");
+	
+		
+		Mall mall2=new Mall("Lulu","Sujatha",200);
+		
+		
+		
+		
+		Mall mall3=new Mall("Lulu","Sujatha",3000);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+		
+		
